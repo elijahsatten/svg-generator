@@ -49,7 +49,7 @@ function start() {
         .then((answers) => {
             const { text, color, shape, background } = answers;
             const svg = generateSVG(text, color, shape, background);
-            fs.writeFile('./examples/logo.svg', svg, (err) => {
+            fs.writeFile('logo.svg', svg, (err) => {
                 if(err) {
                     console.log(err);
                 }
